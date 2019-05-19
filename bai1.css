@@ -40,8 +40,38 @@ a:hover{
 	text-decoration: underline;
 	color: blue;
 }
+#banner{
+	border: orange solid 3px;
+	background-color: #DDDDDD;
+	height: 100px;
+	width: 100%;
+}
+.logo{
+	background-image: url("images/logo.jpg");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+.title{
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	line-height: 100px;
+}
 #menu{
 	border: green solid 3px;
 	width: 100%;
-	height: 80px;
+	height: 50px;
+}
+#content{
+	height: 300px;
+	width: 100%;
+	border: yellow solid 3px;
+}
+#footer{
+	height: 50px;
+	width: 100%;
+	border: purple solid 3px;
 }
