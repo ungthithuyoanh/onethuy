@@ -1,0 +1,83 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+}
+
+#wrapper{
+	background-color: pink;
+	padding: 10px 0px;
+	height: auto;
+	/*float: left;*/
+	width: 100%;
+}
+
+header{
+	margin: auto;
+	border: red solid 3px;
+	background-color: #EEEEEE;
+	height: auto;
+	display: table;
+	width: 1024px;
+}
+
+.header1{
+	background-color: white;
+	float: left;
+	border: green solid 5px;
+	width: 40%;
+	height: 100px;
+	margin: 20px 50px;
+}
+.header2{
+	float: left;
+	background-color: black;
+	border: green solid 5px;
+	width: 40%;
+	height: 100px;	
+	margin: 20px 50px;
+}
+
+@media only screen and (min-width: 721px)  and (max-width: 1023px) 
+{
+	#wrapper {	
+		/*height: 200px;*/
+		border : solid 5px;
+	}
+	header{
+		width: 85%;
+		margin: auto;
+	}
+	.header1{
+		float: left;
+		margin: 5%;
+	}
+	.header2{
+		float: left;
+		margin: 5%;
+	}
+}
+
+/*css cho phone*/
+@media only screen and (max-width: 720px) 
+{
+	#wrapper {
+		border : solid 5px blue;
+	}
+	header{
+		width: 95%;
+	}
+	.header1{
+		width: 80%;
+		margin: 8%;
+		/*margin-left: auto;
+		margin-right: auto;*/
+	}
+	.header2{
+		width: 80%;
+		margin: 8%;
+		/*margin-left: auto;
+		margin-right: auto;*/
+	}
+}

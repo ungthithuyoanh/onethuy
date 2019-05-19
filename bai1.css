@@ -1,0 +1,47 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrapper{
+	border: black solid 5px;
+	width: 1024px;
+	height: auto;
+	margin: auto;
+}
+header{
+	border: red solid 3px;
+	width: 100%;
+	height: auto;
+	display: table;
+}
+.header1{
+	border: black solid 2px;
+	width: 65%;
+	height: 100px;
+	float: left;
+}
+.header2{
+	border: black solid 2px;
+	width: 35%;
+	height: 100px;
+	float: left;
+	text-align: right;
+}
+a{
+	text-decoration: none;
+	color: black;
+	margin: 0px 5px;
+}
+a:hover{
+	text-decoration: underline;
+	color: blue;
+}
+#menu{
+	border: green solid 3px;
+	width: 100%;
+	height: 80px;
+}

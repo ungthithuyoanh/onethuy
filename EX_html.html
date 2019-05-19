@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HTML</title>
+	<link rel="stylesheet" href="css/.cs">
+</head>
+<body>
+	<p>HTML (viết tắt: HyperText Markup Language) là "ngôn ngữ đánh dấu Siêu văn bản" là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web với các mẫu thông tin được trình bày trên World wide Web</p>
+	<p> Các yếu tố HTML được thể hiện bằng các thẻ</p>
+	<br>
+	<p>Các thẻ heading(tiêu đề) trong html</p>
+	<h1>Đây là thẻ heading 1</h1>
+	<h2>Đây là thẻ heading 2</h2>
+	<h3>Đây là thẻ heading 3</h3>
+	<h4>Đây là thẻ heading 4</h4>
+	<h5>Đây là thẻ heading 5</h5>
+	<h6>Đây là thẻ heading 6</h6>
+	<br>
+	<p>Thẻ p: đoạn văn</p>
+	<br>
+	<p>
+		<span>Thẻ span: được sử dụng để nhóm các thành phần nội tuyến trong tài liệu; không cung cấp thay đổi trực quan, cung cấp 1 cách để thêm 1 móc vào 1 phần văn bán hoặc 1 phần của tài liệu</span>
+	</p>
+	<br>
+	<a href="https://www.facebook.com/ungthithuyoanh" target="_blank">Thẻ a: thẻ liên kết <br>
+		<span style="color: red;"> target: thuộc tính xđ nơi để mở tài liệu được liên kết.
+			<ul style="color: blue;">
+				<li>_blank :Mở tài liệu được liên kết trong một cửa sổ hoặc tab mới</li>
+				<li> _self :Mở tài liệu được liên kết trong cùng một cửa sổ / tab khi được nhấp (đây là mặc định)</li>
+				<li>_parent : Mở tài liệu được liên kết trong khung: Mở tài liệu được liên kết trong toàn bộ cửa sổ.</li>
+				<li>framename : Mở tài liệu được liên kết trong một khung có tên</li>
+			</ul>
+		</span>
+	</a><br>
+	<p>Thẻ img: thẻ hình ảnh có 2 thuộc tính src(Hình) alt(xđ văn bản thay thế khi k có hình)</p>
+	<img src="an_ninh.jpg" alt="An ninh mạng">
+	<br>
+	<table border="1" style="width: 400px">
+		<caption>Bảng table:caption(chú thích) tr(hàng) th(title) td(nội dung cột)</caption>
+		<tr>
+			<th>
+				Stt
+			</th>
+			<th colspan="2">
+				Nội dung
+			</th>
+			<th>
+				Mô tả
+			</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>HTML</td>
+			<td>Hypertext Markup Language</td>
+			<td rowspan="2">Đây là HTMl</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td colspan="2">CSS</td>
+		</tr>
+	</table>
+	<br>
+	<div>
+		Đây là thẻ div: thẻ khối
+	</div>
+	<br>
+	<p>Thẻ ul,li,ol</p>
+	<ul style = " list-style-type: circle;">
+		<li>Thẻ ul</li>
+		<li>Định dạng danh sách theo kiểu k có thứ tự</li>
+		<li>đánh dấu</li>
+	</ul>
+	<ol type="I">
+		<li>
+			ággga
+			<ol>
+				<li>frre</li>
+				<li>ág</li>
+			</ol>
+		</li>
+		<li>Thẻ ol</li>
+		<li>Định dạng danh sách theo kiểu có thứ tự</li>
+		<li>Đánh số</li>
+	</ol>
+	<br>
+	<form>
+		<label>Họ tên: </label>
+		<input type="text" name="username" placeholder="Họ và tên"> 
+		<br>
+		<label>Pass: </label>
+		<input type="password" name="pass" placeholder=""> 
+		<br>
+		<label>Address: </label>
+		<select name="" ><!-- multiple -->
+			<option value="" selected>Thành phố</option>
+			<option value="">Đà Nẵng</option>
+			<option value="" >Quảng Nam</option>
+		</select>
+		<br>
+		<label>Giới tính: </label><br>
+		<input type="radio" name="gender" value="male" checked> Male<br>
+		<input type="radio" name="gender" value="female"> Female<br>
+		<input type="radio" name="gender" value="other"> Other
+		<br> <br>	
+		<label>Trình độ: </label><br>
+		<input type="radio" name="trinh_do" value="male" checked> Trung cấp<br>
+		<input type="radio" name="trinh_do" value="female"> Đại học<br>
+		<input type="radio" name="trinh_do" value="other"> Other
+		<br>
+		<textarea rows="4" cols="20" style=”resize: none; placeholder="Nhập văn bản....This is textatrea(dùng để nhập nhiều dòng văn bản.)"; maxlength="200";></textarea>
+		<br> 
+		<input type="submit" name="submit" value="Gửi"><br>
+		<p>
+			<fieldset>
+				<p>fieldset: sử dụng để nhóm các thành phần liên quan trong một biểu mẫu; vẽ một hộp xung quanh các thành phần liên quan.</p>
+				<legend>Personal infomation(legend:xđ chú thích cho phần tử)</legend>
+				First name: <br>
+				<input type="text" name="firstname" value="Thuy"> <br>
+				Last name: <br>
+				<input type="text" name="lastname" value="Oanh"> <br><br>
+				<input type="submit" value="submit">
+			</fieldset>
+		</p>
+		<button type="button" onclick="alert('Xin chào')">This is button</button>
+	</form>
+</body>
+</html>
