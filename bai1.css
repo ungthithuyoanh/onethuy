@@ -33,8 +33,10 @@ header{
 }
 a{
 	text-decoration: none;
+	text-align: center;
 	color: black;
-	margin: 0px 5px;
+	margin: 0px 2%;
+	word-wrap: break-word;
 }
 a:hover{
 	text-decoration: underline;
@@ -63,7 +65,8 @@ a:hover{
 #menu{
 	border: green solid 3px;
 	width: 100%;
-	height: 50px;
+	height: auto;
+
 }
 #content{
 	height: 300px;
@@ -74,4 +77,39 @@ a:hover{
 	height: 50px;
 	width: 100%;
 	border: purple solid 3px;
+}
+@media only screen and (min-width: 721px)  and (max-width: 1023px) {
+	#wrapper{
+		width: 80%;
+	}
+}
+/*css cho phone*/
+@media only screen and (max-width: 720px) {
+	#wrapper{
+		width: 100%;
+	}
+	#banner{
+
+	}
+	.logo{
+		margin-top: 20px;
+		width: 130px;
+		height: 60px;
+	}
+	.title{
+		margin-top: 20px;
+		font-size: 22px;
+		line-height: 60px;
+	}
+	.header2{
+		text-align: left;
+	}
+	.header2 a{
+		margin: 5%;
+		padding-left: 20%;
+	}
+	#menu a{
+		text-align: center;
+
+	}
 }
